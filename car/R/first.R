@@ -1,0 +1,6 @@
+train <- read.csv('../input/train.csv')
+test <- read.csv('../input/test.csv')
+head(train)
+sum(is.na(train))
+summary(train)
+cor(train)
