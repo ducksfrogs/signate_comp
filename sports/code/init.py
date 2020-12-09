@@ -17,4 +17,4 @@ data = pd.concat([train, train_add], axis=0)
 
 condition_new = pd.concat([condition, condition_add], axis=0)
 
-tmp = pd.merge()
+tmp = pd.merge(data, condition_new,on='id',how='left')
